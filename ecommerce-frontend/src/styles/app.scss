@@ -21,7 +21,7 @@ a {
 
 $color1: white;
 $color2: rgb(46, 46, 46);
-$color3: rgb(0, 104, 136);
+$color3: rgb(30, 106, 130);
 
 .red {
   color: red;
@@ -39,6 +39,7 @@ $color3: rgb(0, 104, 136);
 @import "shipping";
 @import "login";
 @import "search";
+@import "productdetails";
 @import "admin-styles/dashboard";
 @import "admin-styles/products";
 @import "admin-styles/chart";
@@ -276,12 +277,12 @@ $color3: rgb(0, 104, 136);
   height: 85vh;
   @include flex;
   > div {
-    @include square(10rem);
+    @include square(5rem);
     border-radius: 50%;
-    border-top: 1rem solid rgb(43, 43, 43);
-    border-left: 1rem solid rgb(43, 43, 43);
-    border-right: 1rem solid #fff;
-    border-bottom: 1rem solid #fff;
+    border-top: 0.6rem solid rgb(43, 43, 43);
+    border-left: 0.6rem solid rgb(43, 43, 43);
+    border-right: 1.6rem solid #fff;
+    border-bottom: 1.6rem solid #fff;
     animation: loading-animation 0.5s linear infinite;
   }
 }

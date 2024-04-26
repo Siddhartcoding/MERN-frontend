@@ -54,7 +54,6 @@ const CheckOutForm = () => {
       shippingCharges,
       total,
       user: user?._id!,
-      ō,
     };
 
     const { paymentIntent, error } = await stripe.confirmPayment({

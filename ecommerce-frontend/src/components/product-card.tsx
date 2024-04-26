@@ -1,7 +1,7 @@
 import { FaPlus } from "react-icons/fa";
+// import { TbListDetails } from "react-icons/tb";
 import { server } from "../redux/store";
 import { CartItem } from "../types/types";
-
 type ProductsProps = {
   productId: string;
   photo: string;
@@ -33,6 +33,9 @@ const ProductCard = ({
         >
           <FaPlus />
         </button>
+        {/* <button onClick={handleProductDetails}>
+          <TbListDetails />
+        </button> */}
       </div>
     </div>
   );

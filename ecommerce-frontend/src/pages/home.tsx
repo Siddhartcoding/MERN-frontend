@@ -6,7 +6,7 @@ import ProductCard from "../components/product-card";
 import { useLatestProductsQuery } from "../redux/api/productAPI";
 import { addToCart } from "../redux/reducer/cartReducer";
 import { CartItem } from "../types/types";
-
+import { GiArmoredBoomerang } from "react-icons/gi";
 const Home = () => {
   const { data, isLoading, isError } = useLatestProductsQuery("");
 
@@ -27,7 +27,7 @@ const Home = () => {
       <h1>
         Latest Products
         <Link to="/search" className="findmore">
-          More
+          More <GiArmoredBoomerang />
         </Link>
       </h1>
 
